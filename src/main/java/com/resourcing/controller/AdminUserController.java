@@ -92,7 +92,7 @@ public class AdminUserController {
 			@Validated @ModelAttribute("objJd") JobDescription objJobDescription) {
 		List<JobDescription> jdList = jobDescriptionService.getJobDescriptionListByLocationAndPosition(
 				objJobDescription.getLocation(), objJobDescription.getPosition());
-		LOGGER.debug("if condition:::::");
+	//	LOGGER.debug("if condition:::::");
 		LOGGER.debug("entered into getJdListForUnknown::::" + objJobDescription.getLocation());
 		LOGGER.debug("entered into getJdListForUnknown::::" + objJobDescription.getPosition());
 		model.addAttribute("jdList", jdList);
