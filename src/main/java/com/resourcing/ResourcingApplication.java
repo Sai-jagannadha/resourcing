@@ -46,12 +46,7 @@ public class ResourcingApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(ResourcingApplication.class, args);
 	}
-	
-	@GetMapping("/test")
-	public String test() {
-		return "a";
-	}
-	
+
 	
 	//this is for hitting default page i.e //localhost:8080
 	@GetMapping("")
